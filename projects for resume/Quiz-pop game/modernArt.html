@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="css/modernArt.css" />
+  </head>
+  <body onload="loadQuestion()">
+    <div class="blurBackground"></div><!-- add this in all files-->
+    <div id="main">
+        <div id="flexedContainer"><!-- add this in all files-->
+            <h1 id="questionTag">Question</h1>
+            <h2 id="ques" class="">First Question</h2>
+        </div>
+        <div id="optionsFlexedContainer">
+            <div class="optionContainer">
+                <input type="radio" name="options" id="option1" class="answer">
+                <label for="option1" id="option1Label">option1</label>
+            </div>
+            <div class="optionContainer">
+                <input type="radio" name="options" id="option2" class="answer">
+                <label for="option2" id="option2Label">option2</label>
+            </div>
+            <div class="optionContainer">
+                <input type="radio" name="options" id="option3" class="answer">
+                <label for="option3" id="option3Label">option3</label>
+            </div>
+            <div class="optionContainer">
+                <input type="radio" name="options" id="option4" class="answer">
+                <label for="option4" id="option4Label">option4</label>
+            </div>
+        </div>
+        <div id="buttonContainer">
+            <button type="submit" name="previous" id="previous" onclick="previousQuestion()">Previous</button>
+            <button type="submit" name="submit" id="submit" onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="finalSubmitButtonContainer">
+          <button type="submit" name="submit" class="showScore" id="showScore" onclick="showScore()"><a href="index.html">Final Submit</a></button>
+        </div>
+    </div>
+    <script src="js/modernArt.js"></script>
+  </body>
+</html>

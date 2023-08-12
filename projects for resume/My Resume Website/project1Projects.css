@@ -1,0 +1,7 @@
+.projectsGrid{
+    display:grid;
+    width:100%;
+    grid-template-columns:repeat(3,1fr);
+    gap: 1vw;
+    padding: 1vw 2vw 1vw 4vw;
+}

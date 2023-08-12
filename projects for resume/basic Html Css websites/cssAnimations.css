@@ -1,0 +1,93 @@
+@keyframes moveForward{
+    to{
+        left:400px;
+    }
+    from{
+        left:0px;
+    }
+}
+@keyframes ForwardBackward{
+    to{
+        left:400px;
+    }
+    from{
+        left:0px;
+    }
+}
+@keyframes rotation{
+    0%,100%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 100px;
+        top: 0px;
+        background-color: darkgrey;
+    }
+    50%{
+        left: 100px;
+        top: 100px;
+        background-color: darkgoldenrod;
+    }
+    75%{
+        left: 0px;
+        top: 100px;
+        background-color: darkcyan;
+    }
+}
+.animate1{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    position:relative;
+    animation-name: moveForward;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+.animate2{
+    width: 200px;
+    height: 200px;
+    position:relative;
+    background-color: plum;
+    animation: ForwardBackward 3s ease-in-out infinite alternate;
+}
+.animate3 {
+    width:100px;
+    height:100px;
+    position:relative;
+    background-color: darkolivegreen;
+    animation: rotation 0.5s ease-in-out infinite;
+}
+
+
+@keyframes pulse {
+    0%,100%{
+        transform: scale(0.75);
+    }
+    50%{
+        transform: scale(1.25);
+    }
+}
+.box{
+    width:100px;
+    height:100px;
+    background-color: #FF5678;
+    display:inline-block;
+    border-radius: 5px;
+    margin-right: 40px;
+    animation-name:pulse;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.box1{
+    animation-delay: 0s;
+}
+.box2{
+    animation-delay: 0.125s;
+}
+.box3{
+    animation-delay: 0.25s;
+}

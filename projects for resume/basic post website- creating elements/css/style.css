@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  background-image: url('../img/galaxy\ \(1\).gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social-card {
+  position: relative;
+  width: 600px;
+  height:160px;
+  border: 1px solid;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(37, 36, 36);
+  opacity: 0.8;
+  padding: 10px;
+  box-shadow: 2px 2px 1px white;
+}
+
+.post-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url('../img/praveen-1.jpg');
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.post-title {
+  position: absolute;
+  top: 15px;
+  left: 90px;
+  font-size: 25px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.post-user {
+  position: absolute;
+  top: 50px;
+  left: 90px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(162, 82, 247);
+}
+
+.post-content {
+  position: relative;
+  top: 80px;
+  font-size: 2vh;
+  color: aliceblue;
+}
+.welcome{
+  color: rgb(252, 252, 253);
+  font-style: italic;
+  font-weight: 900;
+  font-size: 30px;
+}

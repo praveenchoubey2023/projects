@@ -1,0 +1,21 @@
+body{
+    margin:0;
+}
+.flex{
+    display:flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.bg-gray-900 {
+    background-color: #121826;
+}
+.color-white{
+    color: white;
+}

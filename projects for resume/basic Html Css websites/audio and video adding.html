@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The website </title>
+</head>
+<body height=100%>
+    <header style="background-color: grey;height: 100px;">
+        <h1 style="text-align: center;">MY Website</h1>
+        <h5 style="text-align: center;">My Website Subtitle</h5>
+        <nav>
+            <a href="home.html">Home</a>|
+            <a href="about.html">About</a>|
+            <a href="portfolio.html">Portfolio</a>|
+            <a href="products.html">Products</a>|
+            <a href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+    <section style="background-color: #abca; width: 50%; float: left;">
+        <header>
+            <h1>Primary content</h1>
+        </header>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi ipsam sunt ratione architecto, omnis voluptatum officiis dolor veritatis officia, 
+                numquam error quia ipsum atque. Praesentium, eaque! Vitae facere nam perferendis.
+             </p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi ipsam sunt ratione architecto, omnis voluptatum officiis dolor veritatis officia, 
+                numquam error quia ipsum atque. Praesentium, eaque! Vitae facere nam perferendis.
+             </p>
+        </article>
+    </section>
+    <aside style="background-color: #e2e2e2; width: 50%; float: left;">
+        <header><h3>Secondary content</h3></header>
+        <img src="//unsplash.it/200/160" alt="a random image" style="height: 100%;">
+        <figcaption> An Image</figcaption>
+    </aside>
+
+    <!-- trial for video element-->
+<video autoplay loop controls style="width: 100%;">
+    <source src="practicevideo.mp4" type="video/mp4">
+    Your browser is outdated, and it doesnot support video property of HTML5. kindly update
+</video>
+<!-- trial for audio element-->
+<audio style="width: 100%;" loop controls>
+    <source src="practiceaudio.mp3" type="audio/mp3">
+    Your browser is outdated, and it doesnot support audio property of HTML5. kindly update
+</audio>
+
+<!-- input element practice emmet shortcut- input:type(can be radiobutton, checkbox, etc.) -->
+<form action="/" method="get"><!-- use the method value as GET to get the values submitted by the user in the current url bar-->
+    <h1>About You-</h1>
+    <div>
+        <label for="your_name">Name</label>
+        <input type="text" name="name" id="your_name" value="xyz">
+    </div>
+    <div>
+        <label for="your_age">Age</label>
+        <input type="number" name="age" id="your_age">
+    </div>
+    <div>
+        <label for="date_of_birth">Enter Your Date of Birth:</label>
+        <input type="date" name="dob" id="date_of_birth">
+    </div>
+    <div>
+        <label for="current_month">choose the current month:</label>
+        <input type="month" name="month" id="current_month">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="favourite_color">Favourite Color:</label>
+        <input type="color" name="color" id="favourite_color">
+    </div>
+    <div>
+        <label for="favourite_color2">Favourite Color default chosen:</label>
+        <input type="color" name="color" id="favourite_color2" value="#efefef"><!-- the value attribute gives an 
+            option to keep a default color automatically chosen when the page reloads. user can still choose. 
+            but placeholder will be the given value -->
+    </div>
+    <div>
+        <label for="mobile_number">Contact Number:</label>
+        <input type="tel" name="number" id="mobile_number">
+    </div>
+    <div>
+        <label>Favourite Fruit:</label>
+        <input type="radio" name="fruit" id="Apple"> Apple
+        <input type="radio" name="fruit" id="Pineapple"> Pineapple
+        <input type="radio" name="fruit" id="grapes" checked> Grapes
+        <input type="radio" name="fruit" id="orange"> Orange
+        <input type="radio" name="fruit" id="Guava"> Guava
+    </div>
+    <div>
+        <label>Favourite Fruit</label>
+        <input type="checkbox" name="Apple" id="Apple"> Apple
+        <input type="checkbox" name="Pineapple" id="Pineapple" checked> Pineapple
+        <input type="checkbox" name="grapes" id="grapes"> Grapes
+        <input type="checkbox" name="orange" id="orange" checked> Orange
+        <input type="checkbox" name="Guava" id="Guava"> Guava
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+    </div>
+
+    <!--Select and textarea elements-->
+    <div>
+        <label for="gender">select your gender</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option><!-- by default the first option is automatically
+            chosen, but this can be changed by using the selected attribute with other option-->
+            <option value="female">Female</option>
+            <option value="transgender">Transgender</option>
+            <option value="gender_neutral" selected>Gender Neutral</option>
+        </select>
+    </div>
+    <div>
+        <!-- Attributes used with textarea element
+            readonly- permits only to read the text box, but the box will not be disabled
+            disabled- the textbox will be present but it will be disabled for both reading and writting
+        -->
+        <!--the placeholder attribute will be visible to guide the user, this placeholder will be visible 
+        to user in the text box as a default text-->
+        <!--use the space between opening and closing tag of textarea if you want some prefilled text in your text box-->
+        <label for="myself">Myself:</label>
+        <textarea name="" id="myself" cols="50" rows="10" style="vertical-align: top;" placeholder="I am"  minlength="10" maxlength="100" >
+            please tell us something about you :
+        </textarea>
+    </div>
+    <div>
+        <label for="country">Choose your Country:</label>
+        <input type="text" name="country" id="country" list="countries">
+        <datalist id="countries">
+            <option value="India"></option>
+            <option value="Australia"></option>
+            <option value="Indonesia"></option>
+            <option value="Thailand"></option>
+            <option value="Malaysia"></option>
+            <option value="Brunei"></option>
+            <option value="Philippenes"></option>
+            <option value="Vietnam"></option>
+            <option value="Laos"></option>
+        </datalist>
+    </div> 
+    <div>
+        <input type="button" value="submit">
+        <input type="submit" value="submit">
+        <button type="submit" style="background-color: rgb(94, 30, 94);color:white; padding:10px; margin:10px; border: 2px solid black;">Click to Submit</button>
+        <button type="reset"><img src="//unsplash.it/16/10"> form reset//</button>
+        <button type="button">Click me</button><!--This button of type button does nothing and is used for javascript rendering-->
+    </div>
+     
+</form>
+
+
+
+    <footer style="text-align: center; clear: both;">
+        <address>
+            You can contact us at <br>
+            h.no-2/D, Priyadarshini Nagar, Risali <br>
+            mobile no- 8178556120 <br>
+            email- praveenchoubey122gmail.com
+        </address>
+        <a href="#">Copyright Info Here</a>
+    </footer>
+</body>
+</html>

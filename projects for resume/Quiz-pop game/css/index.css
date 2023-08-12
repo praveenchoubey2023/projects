@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+body,html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.blurBackground {
+  background-image: url("Quiz.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  height: 100%;
+  animation: backgroundChange 10s ease infinite;
+}
+#main{
+  position:absolute;
+  top:10vh;
+  left:2vw;
+  right:2vw;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  opacity: 0.95;
+  box-shadow: 1vw 2vw rgb(32, 32, 32);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+button{
+  border-radius: 3vh;
+}
+#musicButton{
+  background-color: #fb607f;
+  color:#090002;
+  font-size: 2vh;
+  margin: 2vh 0vw;
+  padding: 1vh 1vw;
+}
+#ModernArtButton{
+  background-color: #43b3ae;
+  color: #000808;
+  font-size: 2vh;
+  margin: 2vh 0vw;
+  padding: 1vh 1vw;
+}
+#codingButton{
+  background-color: #FFA500;
+  color:#080500;
+  font-size: 2vh;
+  margin: 2vh 0vw;
+  padding: 1vh 1vw;
+}
+#scoreCard{
+  position:absolute;
+  bottom:10vh;
+  background-color: #b284be;
+  color: #2f013a;
+  font-size: 3vh;
+  box-shadow: 1vw 2vw #060606;
+  border-radius: 2vh;
+  left:30vw;
+  right: 30vw;
+  padding: 3vh;
+  text-align: center;
+}
+span{
+  columns: #2f013a;
+  font-size: 4vh;
+}
+.scoreCard{
+  visibility: hidden;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+

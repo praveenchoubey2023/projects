@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your JavaScript Playground</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body onload="checkScore()">
+    <div class="blurBackground"></div>
+    <div id="main">
+      <div class="music">
+        <button type="submit" class="music button" id="musicButton"><a href="music.html" id="musicPageAnchor"><h1>Music</h1></a></button>
+      </div>
+      <div class="ModernArt">
+        <button type="submit" class="ModernArt button" id="ModernArtButton"><a href="modernArt.html" id="ModernArtPageAnchor"><h1>Modern - Art</h1></a></button>
+      </div>
+      <div class="coding">
+        <button type="submit" class="coding button" id="codingButton"><a href="coding.html" id="codingPageAnchor"><h1>Coding</h1></a></button>
+      </div>
+    </div>
+    <div id="scoreCard" class="scoreCard">
+      <div class="scores">Music : <span class="musicScore" id="musicScore"></span></div>
+      <div class="scores">Modern-Art :<span class="ModernArtScore" id="ModernArtScore"></span></div>
+      <div class="scores">Coding :<span class="codingScore" id="codingScore"></span></div> 
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

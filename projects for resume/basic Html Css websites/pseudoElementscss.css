@@ -1,0 +1,22 @@
+h1::before{
+    content:">";
+    color:aqua;
+}
+.child1 p::before , .child1 p::after {
+    color:bisque;
+    font-size: 40px;
+}
+.child1 p::before{
+    content:open-quote;
+}
+.child1 p::after{
+    content:close-quote;
+}
+.child2 p::before{
+    content:url(//unsplash.it/30/30);
+}
+.child2 p::after{
+    content:url(//unsplash.it/30/30);
+    /*to change the position of pseudo element from inline to block*/
+    display:block;
+}

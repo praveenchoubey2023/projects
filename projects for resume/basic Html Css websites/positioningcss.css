@@ -1,0 +1,33 @@
+.heading{
+    font-size: 50px;
+    color: aqua;
+}
+.parent{
+    background-color: bisque;
+}
+.child{
+    color:black;
+    padding:10px;
+}
+.child1{
+    background-color: brown;
+    position: absolute;
+    top:20px;
+    left:0px;
+    right:0px;
+    font-size: large;
+}
+.child2{
+    background-color: pink;
+    position: sticky;
+    top:30px;
+    font-size: large;
+}
+.child3{
+    background-color: palevioletred;
+    font-size: large;
+}
+.child4{
+    background-color: aquamarine;
+    font-size: large;
+}
